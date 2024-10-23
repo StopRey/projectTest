@@ -43,7 +43,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-projectTest1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectTest1.release.xcconfig"; path = "Target Support Files/Pods-projectTest1/Pods-projectTest1.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-projectTest1-projectTest1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectTest1-projectTest1Tests.debug.xcconfig"; path = "Target Support Files/Pods-projectTest1-projectTest1Tests/Pods-projectTest1-projectTest1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-projectTest1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-projectTest1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		749244EBD02679E6C97D9BBE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = projectTest1/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		749244EBD02679E6C97D9BBE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = projectTest1/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = projectTest1/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-projectTest1-projectTest1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectTest1-projectTest1Tests.release.xcconfig"; path = "Target Support Files/Pods-projectTest1-projectTest1Tests/Pods-projectTest1-projectTest1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -89,6 +89,7 @@
 		13B07FAE1A68108700A75B9A /* projectTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				639CC0282CC9241100F6054A /* components */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -109,6 +110,13 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-projectTest1-projectTest1Tests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		639CC0282CC9241100F6054A /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = components;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -590,10 +598,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -666,10 +671,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
