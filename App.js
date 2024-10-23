@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {View, Text, FlatList, Image, ActivityIndicator} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 
 const ProductsList = () => {
   const [products, setProducts] = useState([]);
@@ -21,11 +21,9 @@ const ProductsList = () => {
     fetchProducts();
   }, []);
 
-  const renderItem = ({item}) => (
+  const renderItem = ({ item }) => (
     <View>
-      <Image source={{uri: item.image}} />
       <Text>{item.title}</Text>
-      <Text>${item.price}</Text>
     </View>
   );
 
