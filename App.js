@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   modalDescription: {
-    fontSize: 14,
+    fontSize: 12,
     marginBottom: 20,
   },
 });
